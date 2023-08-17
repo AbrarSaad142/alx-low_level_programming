@@ -21,14 +21,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		separator = "";
 	}
 
-	va_start(valist);
+	va_start(valist, n);
 
 	for (i = 0; i < n; i++)
 	{
-		va_arg(args, char *);
+		str = va_arg(valist, char *);
 		if (str == NULL)
 		{
-			printf("nil");
+			printf("(nil)");
 			break;
 		}
 		printf("%s", str);
@@ -42,5 +42,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 
 	printf("\n");
-	va_end(string);
+	va_end(valist);
 	}
