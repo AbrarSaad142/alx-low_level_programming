@@ -4,6 +4,7 @@
 #include "lists.h"
 
 /**
+<<<<<<< HEAD
 *main - check the code
 *
 *Return: Always 0.
@@ -12,6 +13,16 @@ int main(void)
 {
 	listint_t *head;
 	listint_t *new;
+=======
+ *main - check the code
+ * 
+ *Return: Always 0.
+ */
+int main(void)
+{
+	listint_t * head;
+	listint_t * new;
+>>>>>>> 983105723d67aaead8ee945032351822ec34e2ce
 	listint_t hello = { 8, NULL
 	};
 
